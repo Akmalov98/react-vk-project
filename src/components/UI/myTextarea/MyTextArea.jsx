@@ -1,8 +1,9 @@
 import React from 'react'
+import s from './MyTextArea.module.css';
 
-const MyTextArea = ({...props}) => {
+const MyTextArea = ({ ...props }) => {
   return (
-    <textarea {...props}/>
+    <textarea className={s.textArea} {...props} />
   )
 }
 

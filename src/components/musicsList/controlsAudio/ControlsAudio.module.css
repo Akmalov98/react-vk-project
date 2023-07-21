@@ -1,8 +1,14 @@
 .player_container {
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 16px;
     border: 1px solid black;
     width: 100%;
     height: 100px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .title {
@@ -22,28 +28,31 @@
 }
 
 .navigation_wrapper {
+    box-sizing: border-box;
+    padding: 1px;
     height: 10px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
-    width: 80%;
-    height: 5px;
+    width: 100%;
     background-color:red;
 }
 
 .seek_bar {
     border: 1px solid black;
-    height: 4px;
+    height: 8px;
     background-color: white;
-
+    border-radius: 8px;
 }
 
 .player_icons {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    min-width: 300px;
+    max-width: 350px;
 }
 
-.sliderDiv {
-    width: 100px;
-    align-items: center;
+.progress {
+
 }

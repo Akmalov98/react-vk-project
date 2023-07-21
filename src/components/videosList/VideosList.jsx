@@ -48,39 +48,41 @@ const VideosList = () => {
     // }
 
     const handleProgress = (e) => {
-        setState({...state, ...e})
+        setState({ ...state, ...e })
     }
 
     const handleProgressTrack = (e) => {
         videoRef.current.seekTo(Number(e))
     }
 
-  return (
-    <>
-    <div className={s.video_wrapper}>
-        <ReactPlayer
-            url='/avengers.mp4'
-            playing={playing}
-            controls={false}
-            width='100%'
-            height='auto'
-            volume={volume}
-            ref={videoRef}
-            onProgress={handleProgress}
-        />
-        <ControlsVideo
-            classes={s}
-            handlePlay={handlePlay}
-            playing={playing}
-            volume={volume}
-            handleValue={handleValue}
-            loadedSeconds={loadedSeconds}
-            playedSeconds={playedSeconds}
-            handleProgressTrack={handleProgressTrack }
-        />
-    </div>
-    </>
-  )
+    return (
+        <div className={s.videosList}>
+            <div className={s.video_wrapper}>
+                <div className={s.videoHalf}>
+                    <ReactPlayer                    
+                        url='/avengers.mp4'
+                        playing={playing}
+                        controls={false}
+                        width='100%'
+                        height='100%'
+                        volume={volume}
+                        ref={videoRef}
+                        onProgress={handleProgress}
+                    />
+                </div>
+                <ControlsVideo
+                    classes={s}
+                    handlePlay={handlePlay}
+                    playing={playing}
+                    volume={volume}
+                    handleValue={handleValue}
+                    loadedSeconds={loadedSeconds}
+                    playedSeconds={playedSeconds}
+                    handleProgressTrack={handleProgressTrack}
+                />
+            </div>
+        </div>
+    )
 }
 
 export default VideosList

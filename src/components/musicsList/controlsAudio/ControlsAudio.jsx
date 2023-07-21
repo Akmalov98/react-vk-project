@@ -1,16 +1,13 @@
 import React, { useRef, useState } from 'react'
-import {BsFillSkipStartCircleFill, BsFillVolumeMuteFill, BsFillVolumeDownFill, BsFillSkipEndCircleFill, BsFillPlayCircleFill, BsFillPauseCircleFill, BsFillVolumeUpFill, BsFillVolumeOffFill} from 'react-icons/bs'
+import { BsFillSkipStartCircleFill, BsFillVolumeMuteFill, BsFillVolumeDownFill, BsFillSkipEndCircleFill, BsFillPlayCircleFill, BsFillPauseCircleFill, BsFillVolumeUpFill, BsFillVolumeOffFill } from 'react-icons/bs'
 import s from './ControlsAudio.module.css'
-import Slider from './Slider/Slider';
 
-const ControlsAudio = ({audioElem,
-     isPlaying, setIsPlaying, currentSong,
-     setCurrentSong, songs}) => {
+const ControlsAudio = ({ audioElem,
+    isPlaying, setIsPlaying, currentSong,
+    setCurrentSong, songs }) => {
 
-    const [index, setindex] = useState(0);
     const clickRef = useRef();
-    const volumeRef = useRef();
-    
+
     const PlayPause = () => {
         setIsPlaying(!isPlaying)
     }
@@ -51,16 +48,7 @@ const ControlsAudio = ({audioElem,
     const [volume, setVolume] = useState(0.5);
     const [mute, setMute] = useState(false);
 
-    // const mouseMove = (event) => {
-    //     if (event.buttons === 1) {
-    //         const rect = event.target.getBoundingClientRect();
-    //         const x = event.clientX  - rect.left;
-    //         const width = rect.width;
-    //         const value = x / width
-    //         audioElem.current.volume = value;
-    //         setVolume(value);
-    //     }
-    // }
+
 
     const checkWidthVolume = (event) => {
         const value = parseFloat(event.target.value)
@@ -74,39 +62,35 @@ const ControlsAudio = ({audioElem,
         setVolume(value)
     }
 
-  return (
-    <div className={s.player_container}>
-        <div className={s.title}>
-            <p>{currentSong.title}</p>
-        </div>
-        <div className={s.navigation}>
-            <div className={s.navigation_wrapper} onClick={checkWidth} ref={clickRef}>
-            <div className={s.seek_bar} style={{width: `${currentSong.progress + '%'}`}}></div>
-          </div>
-        </div>
-        {/* <div className={s.navigation}>
-            <input type='range'/>
-        </div> */}
-        <div className={s.player_icons}>
-            <BsFillSkipStartCircleFill className={s.skip_back} onClick={skipBack}/>
-            {isPlaying 
-                ? <BsFillPauseCircleFill onClick={PlayPause}/>
-                : <BsFillPlayCircleFill onClick={PlayPause}/> }
+    return (
+        <div className={s.player_container}>
+            <div className={s.title}>
+                <p>{currentSong.title}</p>
+            </div>
+            <div className={s.navigation}>
+                <div className={s.navigation_wrapper} onClick={checkWidth} ref={clickRef}>
+                    <div className={s.seek_bar} style={{ width: `${currentSong.progress + '%'}` }}></div>
+                </div>
+            </div>
 
-            <BsFillSkipEndCircleFill onClick={skipNext}/>
-            <BsFillVolumeUpFill/>
-            {mute ? <BsFillVolumeMuteFill onClick={() => setMute(!mute)}/>
-                  : volume <= 0.2 ? <BsFillVolumeOffFill onClick={() => setMute(!mute)}/>
-                  : volume <= 0.75 ? <BsFillVolumeDownFill onClick={() => setMute(!mute)}/>
-                  : <BsFillVolumeUpFill onClick={() => setMute(!mute)}/>
-            }
-            <div>
-                <input type='range' min='0' max='1' 
-                step='0.01' value={volume} onChange={checkWidthVolume} />
+            <div className={s.player_icons}>
+                <BsFillSkipStartCircleFill className={s.skip_back} onClick={skipBack} />
+                {isPlaying
+                    ? <BsFillPauseCircleFill onClick={PlayPause} />
+                    : <BsFillPlayCircleFill onClick={PlayPause} />}
+
+                <BsFillSkipEndCircleFill onClick={skipNext} />
+                <BsFillVolumeUpFill />
+                {mute ? <BsFillVolumeMuteFill onClick={() => setMute(!mute)} />
+                    : volume <= 0.2 ? <BsFillVolumeOffFill onClick={() => setMute(!mute)} />
+                        : volume <= 0.75 ? <BsFillVolumeDownFill onClick={() => setMute(!mute)} />
+                            : <BsFillVolumeUpFill onClick={() => setMute(!mute)} />
+                }
+                <input type='range' min='0' max='1'
+                    step='0.01' value={volume} onChange={checkWidthVolume} />
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default ControlsAudio

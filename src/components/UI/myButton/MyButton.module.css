@@ -2,4 +2,7 @@
     border: none;
     cursor: pointer;
     background-color: aqua;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 8px;
 }
