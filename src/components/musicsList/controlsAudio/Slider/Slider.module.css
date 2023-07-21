@@ -1,0 +1,26 @@
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+.navigation_wrapper {
+    height: 10px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 5px;
+    background-color:red;
+}
+
+.seek_bar {
+    border: 1px solid black;
+    height: 4px;
+    background-color: white;
+
+}
+

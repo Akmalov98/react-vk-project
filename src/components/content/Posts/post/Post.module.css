@@ -1,0 +1,79 @@
+.story {
+    border: 1px solid black;
+    background: fixed;
+    
+}
+.storyDiv {
+    height: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.authorInformation {
+    display: flex;
+    height: 60px;
+    margin-top: 10px;
+}
+.storyImgDiv {
+    width: 50px;
+}
+.storyImg {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    margin-top: 3px;
+    border: 1px solid black;
+}
+.AuthorDiv {
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.likesDislikesDiv {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.likesDiv {
+    display: flex;
+    height: 30px;
+    width: 80px;
+    border-radius: 50px;
+    background-color: rgb(200, 222, 214);
+}
+.likes {
+    height: 100%;
+    width: 25px;
+    margin-left: 10px;
+    color: rgb(201, 158, 158);
+}
+.likesCount {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.likesButton {
+    background: transparent;
+    border: none;
+}
+.dislikesDiv {
+    display: flex;
+    height: 30px;
+    width: 80px;
+    margin-left: 15px;
+    border-radius: 50px;
+    background-color: rgb(200, 222, 214);
+    border: 1px solid black;
+}
+.dislikes {
+    height: 100%;
+    width: 25px;
+    margin-left: 10px;
+    color: rgb(201, 158, 158);
+}
+.dislikesCount {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.dislikesButton {
+    background: transparent;
+    border: none;
+}

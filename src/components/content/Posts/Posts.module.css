@@ -1,0 +1,25 @@
+.stories {
+    margin-top: 100px;
+    border: 1pz solid black;
+}
+ .storyFormDiv {
+    border: 1pz solid black;
+}
+ .storyTextareaDiv {
+    border: 1pz solid black;
+}
+ .storyTextarea {
+    border: 1pz solid black;
+}
+ .storyAddButtonDiv {
+    border: 1pz solid black;
+}
+ .storyAddButton {
+    border: 1pz solid black;
+}
+
+.loaderDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}

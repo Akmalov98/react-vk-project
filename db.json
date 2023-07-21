@@ -1,0 +1,130 @@
+{
+  "posts": [
+    {
+      "id": "3a6f09b9-b9f1-43f8-8a12-374176d71cb4",
+      "message": "1",
+      "likesCount": 24,
+      "dislikesCount": 0
+    },
+    {
+      "id": "c7188a9b-4777-4616-a919-a25d72828dd2",
+      "message": "2",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "b1433203-09d7-4927-b1cb-d228fd15843d",
+      "message": "3",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "187fcc02-2b1e-4ffb-8fd7-1f8b1b96165e",
+      "message": "4",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "3bcb07bb-d8a1-426f-8ff4-e0636126bb2e",
+      "message": "5",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "54c79d2a-29e1-4de8-a5f5-cecf231a61f6",
+      "message": "6",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "061e9686-3717-4359-b28b-a9e9fe00717d",
+      "message": "7",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "e1e500ab-6e5f-4efa-b829-508434b3b5e7",
+      "message": "8",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "f8b51e85-5153-43ad-98ea-47cac5428be1",
+      "message": "9",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "5e693fde-15bf-4361-9648-765298a22b22",
+      "message": "10",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "48cc3969-1b1d-4f4c-ac36-8da4f948f233",
+      "message": "11",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "8b5ff55d-a39f-443b-aaf2-9e1aea300458",
+      "message": "12",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "1309c76c-88a3-4a6d-827b-56bc526eb149",
+      "message": "13",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "5edcb259-1641-4b80-8442-5e9f7023a224",
+      "message": "14",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "28e0ac79-fa85-4de7-80fd-70fc51a3256f",
+      "message": "15",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "15229974-ffd1-4c43-96ff-db33f46f1d9c",
+      "message": "16",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "1b4ca299-5ad6-4285-92f0-ac2cd853e671",
+      "message": "17",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "60686acb-19bc-44c0-b8ce-7d2450b0e9d0",
+      "message": "18",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "359da241-bfce-4b92-b700-46a3e32a8fd3",
+      "message": "19",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "7edbf60d-9138-472c-a4c4-15444d1c3219",
+      "message": "20",
+      "likesCount": 0,
+      "dislikesCount": 0
+    },
+    {
+      "id": "4c30aaa4-ce61-41ac-955d-0729464f79d0",
+      "message": "21",
+      "likesCount": 0,
+      "dislikesCount": 0
+    }
+  ]
+}

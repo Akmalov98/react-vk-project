@@ -1,0 +1,51 @@
+.videoControlsProgress {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: none;
+    outline: none;
+  }
+  .videoControlsProgress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+  }
+  .videoControlsProgress::-webkit-slider-runnable-track {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  /* .videoControlsProgress::-moz-range-thumb {
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+  } */
+
+  /* .videoControlsProgress::-ms-thumb {
+    width: 10px;
+    height: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+  } */
+  /* .videoControlsProgress::-ms-fill-lower {
+    background-color: #00ff00;
+    cursor: pointer;
+  } */
+  /* .videoControlsProgress::-ms-track {
+    width: 100%;
+    height: 2px;
+    background-color: #dddddd;
+    cursor: pointer;
+    border: 1px solid black;
+  } */
+  
+  
