@@ -1,44 +1,43 @@
 import React from 'react'
 import s from './Navbar.module.css'
 import { NavLink } from 'react-router-dom'
-import MyProfile from './myProfile/MyProfile'
-import News from './news/News'
-import Messenger from './messenger/Messenger'
-import Friends from './friends/Friends'
-import Groups from './groups/Groups'
-import Musics from './musics/Musics'
-import Photos from './photos/Photos'
-import Videos from './videos/Videos'
+import NavbarParent from './NavbarParent';
+import { CgProfile } from 'react-icons/cg';
+import { BiNews } from 'react-icons/bi';
+import { TbMessageCircle2 } from 'react-icons/tb';
+import { FiUsers } from 'react-icons/fi';
+import { HiOutlineUserGroup, HiOutlinePhotograph } from 'react-icons/hi';
+import { BsMusicPlayer, BsCameraVideo } from 'react-icons/bs';
 
 const Navbar = () => {
-  return ( 
-    <nav className={s.nav}>
-            <NavLink to="/content">
-                <MyProfile/>
-            </NavLink>            
+    return (
+        <nav className={s.nav}>
+            <NavLink to="/myProfile">
+                <NavbarParent label={'MyProfile'} child={<CgProfile className={s.leftNavigationIcon} />} />
+            </NavLink>
             <NavLink to="/newsContent">
-                <News/>
+                <NavbarParent label={'News'} child={<BiNews className={s.leftNavigationIcon} />} />
             </NavLink>
             <NavLink to="/dialogs">
-                <Messenger/>
+                <NavbarParent label={'Messenger'} child={<TbMessageCircle2 className={s.leftNavigationIcon} />} />
             </NavLink>
             <NavLink to="/friendsList">
-                <Friends/>
+                <NavbarParent label={'Friends'} child={<FiUsers className={s.leftNavigationIcon} />} />
             </NavLink>
             <NavLink to="/groupsList">
-                <Groups/>
+                <NavbarParent label={'Groups'} child={<HiOutlineUserGroup className={s.leftNavigationIcon} />} />
             </NavLink>
             <NavLink to="/musicsList">
-                <Musics/>
+                <NavbarParent label={'Musics'} child={<BsMusicPlayer className={s.leftNavigationIcon} />} />
             </NavLink>
             <NavLink to="/photosList">
-                <Photos/>
+                <NavbarParent label={'Photos'} child={<HiOutlinePhotograph className={s.leftNavigationIcon} />} />
             </NavLink>
             <NavLink to="/videosList">
-                <Videos/>
+                <NavbarParent label={'Videos'} child={<BsCameraVideo className={s.leftNavigationIcon} />} />
             </NavLink>
         </nav>
-  )
+    )
 }
 
 export default Navbar

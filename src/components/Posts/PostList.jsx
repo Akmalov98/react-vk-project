@@ -1,6 +1,5 @@
 import React from 'react'
 import Post from './post/Post'
-import { useState } from 'react';
 
 const PostList = ({
     posts,

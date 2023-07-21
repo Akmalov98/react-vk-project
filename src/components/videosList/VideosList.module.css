@@ -1,30 +1,50 @@
+.videosList {
+    width: 100%;
+    height: 100%;
+}
 
 .video_wrapper {
     display: flex;
-    position: relative;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
-.videoControsl {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 40px;
-    background: yellow;
-}
-
-.controlsPlay {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: yellow;
-    width: 40px;
-    height: 40px;
+.videoHalf {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+
+.videoHalf:last-child {
+    flex-direction: column;
+}
+
+.interactions {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.videoBtn {
+    background: yellow;
+    padding: 8px 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+.videoProgress {
+    width: calc(100% - 40px);
 }
 
 .videoControlsProgress {
@@ -33,8 +53,7 @@
     appearance: none;
     width: 100%;
     height: 7px;
-    border: 1px solid black;
-    background-color: red;
+    border-radius: 8px;
     cursor: pointer;
 }
 

@@ -7,7 +7,7 @@ const Progress = ({
     funcChange
 }) => {
   return (
-    <div>
+    <div className={classes.videoProgress}>
         <input type='range'
             value={playedSeconds}
             min="0"
@@ -16,7 +16,7 @@ const Progress = ({
             className={classes.videoControlsProgress}
             onChange={(e) => funcChange(e.target.value)}
             style={{ background: `linear-gradient(to right, black
-                ${playedSeconds/loadedSeconds*100}%, white
+                ${playedSeconds/loadedSeconds*100}%, red
                 ${playedSeconds/loadedSeconds*100}%)` }}
         />
     </div>

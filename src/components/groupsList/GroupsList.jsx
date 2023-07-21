@@ -1,15 +1,10 @@
 import React from 'react'
+import s from './GroupsList.module.css'
 
 const GroupsList = () => {
   return (
-    <div>
-        sdkfjvrf
-
-
-
-
-
-        длтш
+    <div className={s.groupsList}>
+      sdkfjvrf длтш
     </div>
   )
 }
