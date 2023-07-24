@@ -9,9 +9,7 @@ import MusicsList from './components/musicsList/MusicsList'
 import PhotosList from './components/photosList/PhotosList'
 import GroupsList from './components/groupsList/GroupsList'
 import VideosList from './components/videosList/VideosList'
-import MyProfile from './components/myProfile/MyProfile';
-import Dialog from './components/dialogs/dialog/Dialog'
-import Dialogs from './components/dialogs/Dialogs'
+import axios from 'axios'
 
 
 
@@ -23,16 +21,16 @@ const App = () => {
         <Header />
         <Navbar />
         <div className='app-wrapper-content'>
-          <Routes>
-            <Route path="/myProfile" element={<MyProfile />} />
-            <Route path="/newsContent" element={<NewsContent />} />
-            <Route path="/friendsList" element={<FriendsList />} />
-            <Route path="/groupsList" element={<GroupsList />} />
-            <Route path="/musicsList" element={<MusicsList />} />
-            <Route path='/photosList' element={<PhotosList />} />
-            <Route path='/videosList' element={<VideosList />} />
-            <Route  path='/dialogs' element={<Dialogs/>}/>
-            <Route  path='/dialogs/:id' element={<Dialog/>}/>
+            <Routes>
+             {/* <Route path="/dialogs/" element={<Dialogs/>}/> */}
+             <Route path="/content" element={<Content /*createPost={createPost} posts={posts} setPosts={setPosts}*/ />}/>
+             <Route path="/newsContent" element={<NewsContent/>}/>
+             <Route path="/friendsList" element={<FriendsList/>}/>
+             <Route path="/groupsList" element={<GroupsList/>}/>
+             <Route path="/musicsList" element={<MusicsList/>}/>
+             <Route path='/photosList' element={<PhotosList/>}/>
+             <Route path='/videosList' element={<VideosList/>}/>
+               {/* <Route path='/dialogs/:id' element={<Dialog/>}/> */}
           </Routes>
         </div>
       </div>
