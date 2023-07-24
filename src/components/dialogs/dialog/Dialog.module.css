@@ -1,0 +1,37 @@
+.dialog {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.dialogTextareaButton {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    margin-left: 50px;
+    bottom: 0px;
+
+}
+.textareaDiv {
+
+}
+.textarea {
+    width: 400px;
+    height: 100%;
+    border-radius: 5px;
+}
+.dialogbuttonIcon {
+
+}
+.icon {
+    width: 30px;
+    height: 30px;
+    color:rgb(175, 166, 166)
+}
+
+.button {
+ width: 30px;
+ height: 30px;
+ margin-left: 30px;
+ margin-top: 6px;
+ border: none;
+    
+}

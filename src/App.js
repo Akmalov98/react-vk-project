@@ -10,6 +10,8 @@ import PhotosList from './components/photosList/PhotosList'
 import GroupsList from './components/groupsList/GroupsList'
 import VideosList from './components/videosList/VideosList'
 import MyProfile from './components/myProfile/MyProfile';
+import Dialog from './components/dialogs/dialog/Dialog'
+import Dialogs from './components/dialogs/Dialogs'
 
 
 
@@ -29,6 +31,8 @@ const App = () => {
             <Route path="/musicsList" element={<MusicsList />} />
             <Route path='/photosList' element={<PhotosList />} />
             <Route path='/videosList' element={<VideosList />} />
+            <Route  path='/dialogs' element={<Dialogs/>}/>
+            <Route  path='/dialogs/:id' element={<Dialog/>}/>
           </Routes>
         </div>
       </div>

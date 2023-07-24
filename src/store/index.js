@@ -1,7 +1,7 @@
 
 
 export const dialogStore = {
-    dialogs: [
+    message: [
         {
             id: 0, name: 'Dimitry',
             messages:
@@ -33,10 +33,6 @@ export const dialogStore = {
             id: 3, name: 'Ruslan', messages:
                 [{ id: 0, message: 'Hi how are you' }]
         },
-        {
-            id: 4, name: 'Gimmy', messages:
-                [{ id: 0, message: 'Hi how are you' }]
-        }
     ]
 }
 
