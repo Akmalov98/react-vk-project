@@ -8,7 +8,7 @@ const MyProfile = () => {
   return (
     <div className={s.myProfile}>
       <ProfileInfo />
-      <Posts />
+      <Posts/>
     </div>
   )
 }

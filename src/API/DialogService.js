@@ -9,7 +9,7 @@ export default class DialogService {
     }
 
     static async getById(id) {
-        const response = await axios.get(`http://localhost:3000/dialogsStore`)
+        const response = await axios.get(`http://localhost:3000/dialogsStore/${id}`)
         return response
     }
 

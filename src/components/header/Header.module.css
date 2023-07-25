@@ -15,8 +15,9 @@
     top: 0;
     box-sizing: border-box;
     padding: 0 35px;
+    z-index: 1;
 }
-img {
+.img {
     width: 150px;
     height: 40px;
 }

@@ -19,7 +19,7 @@ const Dialog = ({...props}) => {
 
 
     const [fetchDialogByID, isLoadinf, error] = useFetching( async () => {
-        const response = await DialogService.getById()
+        const response = await DialogService.getById(params.id)
         setDialog(response.data)
     })
 
@@ -29,8 +29,12 @@ const Dialog = ({...props}) => {
   return (
     <div className={S.dialog}>
         <div className={S.userInfo}>
-        </div>
-            {/* {params.id} {dialog.messages} */}
+        </div>{
+            dialog?.messages?.map(({id, message}) => (
+                <div>{message}</div>
+            ))
+        }
+            
         <div className={S.dialogTextareaButton}>
             <div className={S.textareaDiv}>
                 <textarea 

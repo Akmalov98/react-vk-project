@@ -11,7 +11,6 @@
  }
 .app-wrapper-content {
     grid-area: content;
-    background-color:#9bbd68;
-    min-width: 570px
+    background-color: #9bbd68;
  }
-
+ 
