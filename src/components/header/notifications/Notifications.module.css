@@ -1,0 +1,12 @@
+.notifications {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+}
+
+.notificatiosIcon {
+    background-position: center center;
+    width: 27px;
+    height: 27px;
+    color: #b95555;
+}

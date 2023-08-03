@@ -1,0 +1,29 @@
+.music {
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.musicIcon {
+    width: 27px;
+    height: 27px;
+    color: #b95555;
+}
+
+.popup {
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    min-width: calc(60vw - 180px);
+    height: 100vh;
+    background-color: rgb(168, 153, 153);
+    margin-top: 15px;
+}
+.dropdown {
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  

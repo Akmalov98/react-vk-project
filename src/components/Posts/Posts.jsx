@@ -62,8 +62,7 @@ const Posts = () => {
                 value={searchQuery}
                 onChange={handleInputSearchPost}
             />
-            <PostForm
-                posts={posts}
+            <PostForm 
                 setPosts={setPosts}
                 currentPage={currentPage}
                 limit={limit}

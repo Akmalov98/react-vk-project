@@ -3,7 +3,10 @@ import s from './FriendsList.module.css'
 
 const FriendsList = () => {
   return (
-    <div className={s.friendsList} >FriendsList</div>
+    <div className={s.friendsList} >
+      
+      
+    </div>
   )
 }
 

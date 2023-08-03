@@ -6,7 +6,7 @@ import MyButton from './../../UI/myButton/MyButton';
 import s from '../Posts.module.css';
 
 
-const PostForm = ({ setPosts, currentPage, limit }) => {
+const PostForm = ({setPosts, currentPage, limit }) => {
 
 
     const [textareaValue, setTextAreaValue] = useState('');
@@ -23,7 +23,7 @@ const PostForm = ({ setPosts, currentPage, limit }) => {
             }
 
             const posts = await PostService.addPost(addNewpost)
-            setPosts((await PostService.getAll(currentPage, limit)).data)
+            setPosts((await (PostService.getAll(currentPage, limit))).data)
             setTextAreaValue('')
         }
     }

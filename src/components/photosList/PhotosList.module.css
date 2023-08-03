@@ -55,3 +55,12 @@
   justify-content: center;
   margin-top: 50px;
 }
+
+.notFind {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}

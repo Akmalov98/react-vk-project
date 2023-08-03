@@ -13,4 +13,9 @@ export default class DialogService {
         return response
     }
 
+    static async addMessage(id, m) {
+        const response = await axios.post(`http://localhost:3000/dialogsStore/${id}/messages`, m)
+        return response.data
+    }
+
 }
