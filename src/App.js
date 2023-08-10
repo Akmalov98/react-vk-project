@@ -1,3 +1,4 @@
+// useState не применяется зачем он тут?)
 import React, { useState } from 'react'
 import './App.css'
 import Header from './components/header/Header'
@@ -9,6 +10,7 @@ import MusicsList from './components/musicsList/MusicsList'
 import PhotosList from './components/photosList/PhotosList'
 import GroupsList from './components/groupsList/GroupsList'
 import VideosList from './components/videosList/VideosList'
+// аксиос не применяется зачем он тут?)
 import axios from 'axios'
 import MyProfile from './components/myProfile/MyProfile'
 import Dialogs from './components/dialogs/Dialogs'

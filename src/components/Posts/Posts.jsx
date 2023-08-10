@@ -12,8 +12,12 @@ import { v4 as uuidv4 } from 'uuid';
 import s from './Posts.module.css';
 
 const Posts = () => {
+    // вообще когда строк меньше 500 считается что компонент некрупный но он у тебя прям перегружен юзСтейтами. 
+    // в чем суть инпут-поисковик и список постов снаружи формы если все по итогу в нее прокидывается лучше сделать мощный компонент формы а внутри него подкомпоненты
     const [searchQuery, setSearchQuery] = useState('');
     const [posts, setPosts] = useState([]);
+    // зачем стетйы для лайков снаружы компонента Post и снаружи списка? мног овыдергиваний логики
+    // если хочешь выдернуть логику сделай папку компонента пост где отдельными файлами вынеси логику из компонента. Слишком перегружаешь родителей посомтри (но не запускай) примеры кода когторый я тебе кидал архивами проектов
     const [likesCount, setLikesCount] = useState(0)
     const [dislikesCount, setDisLikesCount] = useState(0)
     const [currentPage, setCurrentPage] = useState(1);
@@ -42,7 +46,7 @@ const Posts = () => {
         setPosts(((await PostService.getAll(currentPage, limit)).data))
     }
 
-
+ // с запросами какая-то срань и ошибки при запуске переделай либо поищи ошибку
     const [fetchPosts, isPostsLoading, postError] = useFetching(async () => {
         const response = await PostService.getAll(currentPage, limit);
         setPosts(response.data);
@@ -81,6 +85,7 @@ const Posts = () => {
 
                 />
             }
+            // зачем пагинация если нету таблицы или чего-то подобюного чтобы весь компонент не листать
             {/* <div ref={lastElement} style={{height: 20, background: 'red'}}></div> */}
             <Pagination
                 setCurrentPage={setCurrentPage}
